@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["next", "xo", "xo-react", "xo-typescript"],
+  "plugins": ["import"],
+  "rules": {
+    "no-eq-null": "off",
+    "eqeqeq": "off",
+    "max-len": [
+      "error",
+      {
+        "ignoreTrailingComments": false,
+        "code": 100
+      }
+    ],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 1 }],
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": true,
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": true
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "sibling",
+          "object",
+          "type"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "warnOnUnassignedImports": true
+      }
+    ]
+  }
+}

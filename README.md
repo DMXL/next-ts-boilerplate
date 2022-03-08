@@ -1,9 +1,9 @@
 # next-ts-boilerplate
 
-This is a boilerplate to help create Next (React) app in TypeScript, with the following configurations ready out-of-the-box:
+This is a boilerplate to help create Next (React) app in TypeScript, with the following out-of-the-box configurations:
 
-- **Styled-Components** for styling, integrated with TypeScript type check and compiler configurations
-- **ESLint** extended from [xo](https://github.com/xojs/eslint-config-xo), [xo-react](https://github.com/xojs/eslint-config-xo-react), [xo-typescript](https://github.com/xojs/eslint-config-xo-typescript), with a few tweaks
+- **Styled-Components** for styling, integrated with type checking of ts and compiler configs
+- **ESLint** extended from [xo](https://github.com/xojs/eslint-config-xo), [xo-react](https://github.com/xojs/eslint-config-xo-react) and [xo-typescript](https://github.com/xojs/eslint-config-xo-typescript), with a few tweaks
 - **VSCode Settings** `.vscode/settings.json` so save some hassle
 
 More integrations planned:
